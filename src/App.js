@@ -16,7 +16,7 @@ function Div(props) {
         -webkit-transition: all 1s ease;
       `}
     >
-      Generated Color: {props.color}
+      {`Generated Color: ${props.color}`}
     </div>
   );
 }
