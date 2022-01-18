@@ -16,7 +16,7 @@ function Div(props) {
         -webkit-transition: all 1s ease;
       `}
     >
-      {`Generated Color: ${props.color}`}
+      Generated Color: {props.color}
     </div>
   );
 }
@@ -31,24 +31,20 @@ function Control() {
   };
   return (
     <div>
-      <form>
-        <label>
-          Hue:
-          <input value={hue} onChange={(e) => setHue(e.target.value)} />
-        </label>
-        <br />
-        <label>
-          Luminosity:
-          <input value={lum} onChange={(e) => setLum(e.target.value)} />
-        </label>
-      </form>
-      <div>
-        <button onClick={() => setCol(randomColor(param))}>Generate</button>
-        <Div color={col} />
-        {/* <span>
+      <label>
+        Hue:
+        <input value={hue} onChange={(e) => setHue(e.target.value)} />
+      </label>
+      <br />
+      <label>
+        Luminosity:
+        <input value={lum} onChange={(e) => setLum(e.target.value)} />
+      </label>
+      <button onClick={() => setCol(randomColor(param))}>Generate</button>
+      <Div color={col} />
+      {/* <span>
           {hue} and {lum}
         </span>  */}
-      </div>
     </div>
   );
 }
