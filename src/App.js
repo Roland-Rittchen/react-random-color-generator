@@ -30,7 +30,7 @@ function Control() {
     hue: hue,
   };
   return (
-    <div>
+    <>
       <label>
         Hue:
         <input value={hue} onChange={(e) => setHue(e.target.value)} />
@@ -45,7 +45,7 @@ function Control() {
       {/* <span>
           {hue} and {lum}
         </span>  */}
-    </div>
+    </>
   );
 }
 
