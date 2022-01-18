@@ -11,9 +11,9 @@ function Div(props) {
         padding: 32px;
         font-size: 24px;
         background-color: ${props.color};
-        transition: all 1s ease;
+        /* transition: all 1s ease;
         -moz-transition: all 1s ease;
-        -webkit-transition: all 1s ease;
+        -webkit-transition: all 1s ease;*/
       `}
     >
       Generated Color: {props.color}
